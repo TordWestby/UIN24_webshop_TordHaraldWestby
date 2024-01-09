@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#test {
+    font-size: 60px;
+    color: green;
+}
