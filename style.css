@@ -1,10 +1,87 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+:root {
+    --red: #DA291C;
+    --blue: #006DB7;
+    --white: #FFFFFF;
+    --yellow: #FFD700;
+    --green: #00AF4D;
+    --black: #000000;
+
+    --font: 'Rubik', sans-serif;
+    --rootsize: 20px;
+    --maxsize: 1200px;
 }
 
-#test {
-    font-size: 60px;
-    color: green;
+
+body {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url("website_images/mainbackground.png");
+    background-color: var(--yellow);
+    font-family: var(--font);
+    font-size: var(--rootsize);
+}
+
+/*Fixed text sizez*/
+p {font-size: 1rem;}
+h2 {font-size: 2.5rem; font-weight: 700;}
+h3 {font-size: 1.5rem; font-weight: 600;}
+
+
+/*Main Structure*/
+#container {
+    margin: 0 auto;
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    max-width: var(--maxsize);
+    min-height: 200px;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1rem; 
+}
+
+#container header #logo {
+    max-width: 15rem;
+}
+
+#container header #cart-icon {
+    max-width: 3rem;
+}
+
+
+/*Nav/navigation bar*/
+nav {
+    background-color: var(--red);
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li a {
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav a {
+    display: inline-block;
+    padding: 1rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: var(--yellow);
+    border-bottom: 5px solid var(--black);
+    color: var(--black);
 }
